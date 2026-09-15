@@ -1,0 +1,14 @@
+# pip install -r python/requirements.txt
+#
+# Runtime deps for imageserver.py plus test deps for test_imageserver.py
+# (the opt-in, real-model integration test - see that file's docstring for
+# how to run it).
+fastapi
+uvicorn[standard]
+diffusers
+transformers
+accelerate
+torch
+pillow
+pytest
+httpx
