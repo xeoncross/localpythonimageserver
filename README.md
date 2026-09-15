@@ -38,6 +38,7 @@ curl -X POST http://127.0.0.1:8000/generate \
 
 Draw Things (closed-source) provides a nice UI editor and has a [http server](https://gist.github.com/xeoncross/a84b2ebcf48f13d4f9cb2f87fba0407b)
 
+Currently I'm using Draw Things as it only uses 30% of the memory (10GB vs 30GB)
 
 
 # Cache of models

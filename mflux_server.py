@@ -108,8 +108,12 @@ MODELS = {
     # "flux2-klein-9b": {"load": _flux2_klein("flux2_klein_9b"), "steps": 4, "quantize": 8},
     # A pre-quantized repo from Hugging Face instead of quantizing at load time:
     # 36GB, 36sec
-    "flux2-klein-4b-q4": {"load": _flux2_klein("flux2_klein_4b"), "steps": 4,
-                          "quantize": None, "model_path": "RunPod/FLUX.2-klein-4B-mflux-4bit"},
+    "flux2-klein-4b-q4": {
+        "load": _flux2_klein("flux2_klein_4b"), 
+        "steps": 4,
+        "quantize": None, 
+        "model_path": "RunPod/FLUX.2-klein-4B-mflux-4bit"
+    },
 }
 DEFAULT_MODEL = os.environ.get("MFLUX_MODEL", "flux2-klein-4b")
 
